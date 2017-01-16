@@ -1,0 +1,96 @@
+input[type="email"]:-moz-placeholder,
+input[type="text"]:-moz-placeholder {
+    text-align: right;
+    font-style: italic;
+}
+input[type="email"]:-ms-input-placeholder,
+input[type="text"]:-ms-input-placeholder {
+    text-align: right;
+    font-style: italic;
+}
+input[type="email"]::-webkit-input-placeholder,
+input[type="text"]::-webkit-input-placeholder {
+    text-align: right;
+    font-style: italic;
+}
+
+fieldset {
+  margin-top: 30px;
+  border: none;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+
+.contact label, article label {
+  display: block;
+  margin-top: 5px;
+  color: #62676b;
+  font-size: 1em;
+  
+}
+
+fieldset label:first-of-type {
+  margin-bottom: 1em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  width: 100%;
+  font-size: 1em;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #eee;
+  color: #62676b;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  border-radius: 5px;
+}
+
+#zip {
+  width: 50%;
+  margin-bottom: 2em;
+}
+
+select {
+  padding: 6px;
+  height: 45px;
+  border-radius: 2px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border: 1px solid #ddd;
+  background-color: #FFFBCC;
+}
+
+
+.format {
+  margin-top: 1em;
+  line-height: 2.75;
+  color: #62676b;
+  text-align: left;
+  letter-spacing: 1px;
+}
+
+label.radio {
+  display: inline;
+  color: #62676b;
+  margin-left: 10px;
+}
+
+textarea {
+  margin-top: 1em;
+  height: 120px;
+}

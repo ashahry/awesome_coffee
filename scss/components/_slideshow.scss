@@ -1,0 +1,15 @@
+.slideshow { 
+
+    margin: 15px auto; 
+    position: relative; 
+    width: 100%; 
+    padding: 10px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    float: left; 
+    overflow: hidden;
+
+}
+
+.slideshow > div { 
+  overflow: hidden;
+}

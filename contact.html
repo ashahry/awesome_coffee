@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Contact | Awesome Coffee</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="css/application.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide|Monoton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Michroma" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="main-header">
+        <div id="upper-logo">
+          <h1 class="logo">Awesome Coffee</h1>
+        </div>
+        <div class="topNav">
+          <ul class="main-nav">
+            <li><a href="index.html">Main</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="drinkMenu.html">Drink Menu</a></li>
+            <li><a href="foodMenu.html">food Menu</a></li>
+            <li><a href="contact.html" class="selected">Contact</a></li>
+          </ul>
+        </div>
+        <div class="mobile-menu"><a class="menu" href="#">Menu</a></div>
+        <div id="lower-logo">
+          <h1 class="logo">Awesome Coffee</h1>
+        </div> 
+      </header>
+      <p class="our-coffee">Stop by in person during our regular business hours, or email us any time!</p>
+      <ul class="time">
+        <li>Mon - Fri 6:00am - 9:00pm</li>
+        <li>Sat - Sun 6:00am - 9:00pm</li>
+      </ul>
+      <div class="row">
+        <div class="primary col">
+          <div class="form-wraper">
+            <form>
+              <div class="contact">
+                <fieldset>
+                  <legend>Contact Us</legend>
+                  <label for="name">Full Name</label>
+                  <input type="text" placeholder="Required" id="name" name="user_name">
+
+                  <label for="email">Email Address</label><br>
+                  <input type="email" placeholder="Required" id="email" name="user_email">
+
+                  <label for="tel">Phone Number</label><br>
+                  <input type="tel" id="tel" name="user_tel">
+                </fieldset>
+              </div> <!--/.contact-->
+              <fieldset>
+                  <article>
+                    <label>Message</label>
+                  </article>
+                  <textarea>
+                  </textarea>
+                  <button type="submit">Submit</button>
+              </fieldset>
+            </form> 
+          </div> <!--/.form-wraper-->
+        </div> <!--primary-->
+
+        <div class="secondary col">
+          <div id="map"></div> 
+          <script>
+            function initMap() {
+              var uluru = {lat: 38.947617, lng: -77.337056};
+              var map = new google.maps.Map(document.getElementById('map'), {
+                  zoom: 8,
+                  center: uluru
+                });
+                var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+              });
+            }
+          </script> 
+        </div> <!--/.secondary-->
+      </div> <!--/.row-->
+
+      <footer class="footer">
+        <p>Designed By <a href="http://www.arashshahry.com" target="_blank">Arash Shahry</a><p>
+      </footer>
+    </div> <!--/.container-->
+     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAezqeZlXPBD11ppU01E_ov9qdO9FnKm_o&callback=initMap"
+      async defer>
+    </script>
+  </body>
+</html>
