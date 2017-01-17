@@ -28,7 +28,7 @@ legend {
 .contact label, article label {
   display: block;
   margin-top: 5px;
-  color: #62676b;
+  color: $navada ;
   font-size: 1em;
   
 }
@@ -52,7 +52,7 @@ select {
   padding: 15px;
   width: 100%;
   background-color: #eee;
-  color: #62676b;
+  color: $navada;
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
   border-radius: 5px;
 }
@@ -71,22 +71,22 @@ select {
 input:focus,
 select:focus,
 textarea:focus {
-  border: 1px solid #ddd;
-  background-color: #FFFBCC;
+  border: 1px solid $alto;
+  background-color: $lemon-chiffon;
 }
 
 
 .format {
   margin-top: 1em;
   line-height: 2.75;
-  color: #62676b;
+  color: $navada ;
   text-align: left;
   letter-spacing: 1px;
 }
 
 label.radio {
   display: inline;
-  color: #62676b;
+  color: $navada ;
   margin-left: 10px;
 }
 

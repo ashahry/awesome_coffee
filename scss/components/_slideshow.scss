@@ -8,8 +8,19 @@
     float: left; 
     overflow: hidden;
 
+  @media #{$brk-narrow} {
+    width: 49%;
+  }
+
 }
 
 .slideshow > div { 
   overflow: hidden;
+}
+
+.slideshow.last {
+  @media #{$brk-narrow} {
+    float: right;
+    margin-right: 0;
+  }
 }

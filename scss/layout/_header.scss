@@ -1,7 +1,25 @@
+.main-header {
+  @media #{$brk-narrow} {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.main-header,
+  .main-nav,
+  .row {
+
+  @media #{$brk-narrow} {
+    display: flex;
+    visibility: block;
+  }
+}
+
 .description {
   padding-top: 1em;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid $alto ;
 }
+
 
 .headings {
   margin-top: 1em;
@@ -14,12 +32,13 @@
 }
 
 
+
 .menu-item-description {
   line-height: 1.3em;
   margin-left: 1em;
   margin-right: 1em;
   margin-top: -0.7em;
-  font-family: 'Merriweather';
+  font-family: $menu-description-font;
   font-style: normal;
   font-weight: 300;
 }

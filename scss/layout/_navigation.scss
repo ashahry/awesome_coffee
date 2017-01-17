@@ -17,7 +17,7 @@
   letter-spacing: 1px;
 }
 .main-nav a:hover {
-  color: #404040
+  color: $tundora;
 }
 
 .main-nav {
@@ -36,14 +36,14 @@
   margin: 1em;
   cursor: pointer;
  display: block;
- color: #404040;
+ color: $tundora;
  font-family: 'Michroma', sans-serif;
  font-size: 16px;
 }
 
 .mobile-menu {
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
+  border-top: 1px solid $alto ;
+  border-bottom: 1px solid $alto ;
 }
 
 

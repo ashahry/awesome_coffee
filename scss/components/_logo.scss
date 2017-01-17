@@ -1,13 +1,35 @@
+.mobile-menu {
+
+    @media #{$brk-narrow} {
+    visibility: hidden;
+  }
+
+}
 
 .logo {
   text-align: center;
   font-family:  'Monoton', cursive;
-  color: #000;
+  color: $black;
   padding: 1em;
   margin: 0;
+
+  @media #{$brk-narrow} {
+    padding: 0 0 .5em 0;
+  }
 
 }
 
 #upper-logo {
   display: none;
+
+  @media #{$brk-narrow} {
+    display: block;
+    padding: 0;
+  }
+}
+
+#lower-logo {
+  @media #{$brk-narrow} {
+    display: none;
+  }
 }

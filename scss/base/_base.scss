@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: 'Varela Round', sans-serif;
+  font-family: $general-stack-font;
   line-height: 1.6;
   color: rgba(64,64,64,.7);
   margin: 0;
@@ -44,9 +44,16 @@ img {
   margin: 0 auto;
   max-width: 1170px;
   padding: 1.5em;
+
+  @media #{$brk-narrow} {
+    padding: 3em;
+    border: 1px solid $alto ;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
 }
 
  a.selected  {
-  color: #000;
+  color: $black;
   text-decoration: underline;
 }

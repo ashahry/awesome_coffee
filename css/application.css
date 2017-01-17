@@ -2,7 +2,7 @@
   box-sizing: border-box; }
 
 body {
-  font-family: 'Varela Round', sans-serif;
+  font-family: "Varela Round", sans-serif;
   line-height: 1.6;
   color: rgba(64, 64, 64, 0.7);
   margin: 0; }
@@ -42,10 +42,20 @@ img {
   margin: 0 auto;
   max-width: 1170px;
   padding: 1.5em; }
+  @media (min-width: 769px) {
+    .container {
+      padding: 3em;
+      border: 1px solid #ddd;
+      margin-top: 1em;
+      margin-bottom: 1em; } }
 
 a.selected {
   color: #000;
   text-decoration: underline; }
+
+@media (min-width: 769px) {
+  .mobile-menu {
+    visibility: hidden; } }
 
 .logo {
   text-align: center;
@@ -53,9 +63,20 @@ a.selected {
   color: #000;
   padding: 1em;
   margin: 0; }
+  @media (min-width: 769px) {
+    .logo {
+      padding: 0 0 .5em 0; } }
 
 #upper-logo {
   display: none; }
+  @media (min-width: 769px) {
+    #upper-logo {
+      display: block;
+      padding: 0; } }
+
+@media (min-width: 769px) {
+  #lower-logo {
+    display: none; } }
 
 .slideshow {
   margin: 15px auto;
@@ -65,18 +86,26 @@ a.selected {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
   float: left;
   overflow: hidden; }
+  @media (min-width: 769px) {
+    .slideshow {
+      width: 49%; } }
 
 .slideshow > div {
   overflow: hidden; }
 
+@media (min-width: 769px) {
+  .slideshow.last {
+    float: right;
+    margin-right: 0; } }
+
 p.italic {
   font-style: italic;
-  color: #62676b; }
+  color: #62676B; }
 
 button {
   font-family: serif;
   padding: 19px 39px 18px;
-  color: #000;
+  color: #black;
   background: #fff;
   font-size: 16px;
   text-align: center;
@@ -119,7 +148,7 @@ legend {
 .contact label, article label {
   display: block;
   margin-top: 5px;
-  color: #62676b;
+  color: #62676B;
   font-size: 1em; }
 
 fieldset label:first-of-type {
@@ -140,7 +169,7 @@ select {
   padding: 15px;
   width: 100%;
   background-color: #eee;
-  color: #62676b;
+  color: #62676B;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
   border-radius: 5px; }
 
@@ -162,13 +191,13 @@ textarea:focus {
 .format {
   margin-top: 1em;
   line-height: 2.75;
-  color: #62676b;
+  color: #62676B;
   text-align: left;
   letter-spacing: 1px; }
 
 label.radio {
   display: inline;
-  color: #62676b;
+  color: #62676B;
   margin-left: 10px; }
 
 textarea {
@@ -221,6 +250,10 @@ textarea {
 .site-city, footer p {
   text-align: center; }
 
+@media (min-width: 769px) {
+  .row {
+    flex-wrap: wrap; } }
+
 .story-image {
   margin: 50px auto;
   position: relative;
@@ -239,14 +272,37 @@ textarea {
   margin-right: 1em;
   width: 100%;
   height: 400px; }
+  @media (min-width: 769px) {
+    #map {
+      margin-top: 7em;
+      margin-left: 1em; } }
+
+@media (min-width: 769px) {
+  .col {
+    flex: 1 50%; } }
+@media (min-width: 1025px) {
+  .col {
+    flex-basis: 0; } }
 
 .footer {
   margin-top: 2em;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #alto;
   font-size: 0.75em; }
 
 footer p {
   cursor: pointer; }
+
+@media (min-width: 769px) {
+  .main-header {
+    flex-direction: column;
+    align-items: center; } }
+
+@media (min-width: 769px) {
+  .main-header,
+  .main-nav,
+  .row {
+    display: flex;
+    visibility: block; } }
 
 .description {
   padding-top: 1em;
@@ -265,7 +321,7 @@ footer p {
   margin-left: 1em;
   margin-right: 1em;
   margin-top: -0.7em;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-style: normal;
   font-weight: 300; }
 
