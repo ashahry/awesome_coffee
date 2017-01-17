@@ -6,6 +6,6 @@
 }
 
 footer p {
-    text-align: center;
+    @extend %centered;
     cursor: pointer;
   }
